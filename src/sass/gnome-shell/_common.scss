@@ -30,11 +30,9 @@ $cakeisalie: "This stylesheet is generated, DO NOT EDIT";
   $primary_color: -st-accent-color;
 }
 
-@if $trans == 'true' {
-  $menu_bg:                         if($variant == 'light', rgba($base_color, $trans_opacity), rgba($bg_color, $trans_opacity));
-  $osd_bg_color:                    rgba($solid_osd_bg_color, $trans_opacity);
-  $dialog_bg_color:                 if($variant == 'light', rgba($bg_color, $trans_opacity), rgba($base_color, $trans_opacity));
-}
+$menu_bg:                         if($variant == 'light', rgba($base_color, $trans_opacity), rgba($bg_color, $trans_opacity));
+$osd_bg_color:                    rgba($solid_osd_bg_color, $trans_opacity);
+$dialog_bg_color:                 if($variant == 'light', rgba($bg_color, $trans_opacity), rgba($base_color, $trans_opacity));
 
 $active_color:                      if($variant == 'light', rgba(black, 0.26), rgba(white, 0.2));
 $track_color:                       if($variant == 'light', rgba(black, 0.20), rgba(white, 0.16));
@@ -108,7 +106,7 @@ stage {
 %numeric { font-feature-settings: "tnum"; }
 
 %quickmenu_shadow {
-  @if $menu_shadow == 'default' and $trans == 'true' {
+  @if $menu_shadow == 'default' {
     border-image: url("assets/menu_x#{$scaling_factor}.svg") 30 30 30 30;
   } @else {
     border-image: none;

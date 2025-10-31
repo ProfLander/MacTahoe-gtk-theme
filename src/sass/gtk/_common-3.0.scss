@@ -3532,7 +3532,7 @@ calendar {
 // Dialogs
 //
 
-$messagedialog_bg: if($trans == 'true', rgba($bg_color, 0.97), $bg_color);
+$messagedialog_bg: rgba($bg_color, 0.97);
 
 messagedialog { // Message Dialog styling
   &.background { background-color: $messagedialog_bg; }

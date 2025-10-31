@@ -154,14 +154,14 @@
     .overview-tile {
       &:hover .overview-icon,
       &:focus .overview-icon {
-        background-color: if($trans == 'false', $panel_divider, $light_divider_color);
+        background-color: $light_divider_color;
       }
 
       &:active .overview-icon,
       &:highlighted .overview-icon,
       &:selected .overview-icon,
       &:checked .overview-icon {
-        background-color: if($trans == 'false', $panel_track, $light_track_color);
+        background-color: $light_track_color;
       }
     }
 
@@ -169,11 +169,7 @@
       background-color: $dash_bg;
       border: none;
 
-      @if $trans == 'true' {
-        box-shadow: inset 0 0 0 1px rgba(white, 0.2);
-      } @else {
-        box-shadow: none;
-      }
+      box-shadow: inset 0 0 0 1px rgba(white, 0.2);
     }
 
     .dash-separator {

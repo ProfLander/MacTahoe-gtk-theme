@@ -75,7 +75,7 @@ $raven_padding: 8px;
 
 .budgie-settings-window {
   &.background {
-    background-color: rgba($base_color, if($trans == 'true', 0.97, 1));
+    background-color: rgba($base_color, 0.97);
 
     buttonbox.inline-toolbar {
       border-style: none none solid;
@@ -878,7 +878,7 @@ $raven_shadow: 0 0 3px 0 rgba(black, 0.2), 0 0 8px 0 rgba(black, 0.15), 0 0 16px
 
 // Raven
 .raven {
-  background-color: if($trans == 'true', gtkalpha($raven_bg_color, $raven_opacity), $raven_bg_color);
+  background-color: gtkalpha($raven_bg_color, $raven_opacity);
   color: $raven_fg_color;
   box-shadow: $shadow_4;
 

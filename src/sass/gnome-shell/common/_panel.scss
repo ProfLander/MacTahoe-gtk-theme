@@ -98,7 +98,7 @@ $panel_height: $menuitem_size;
   &:overview { background-color: transparent; }
 
   @if $variant == 'light' {
-    @if $panel_font == 'black' or $trans == 'false' {
+    @if $panel_font == 'black' {
       &:overview {
         background-image: url("assets/activities-white.svg");
       }
@@ -142,10 +142,6 @@ $panel_height: $menuitem_size;
     @if $panel_style == 'default' {
       border: $container_padding solid transparent !important;
       border-radius: $circular_radius;
-
-      @if $trans == 'false' {
-        box-shadow: inset 0 0 0 1000px $panel_bg;
-      }
     } @else {
       border: none;
       border-radius: $bt_radius;
@@ -226,10 +222,6 @@ $panel_height: $menuitem_size;
         padding: 0 $base_padding + 12px !important;
         margin: 0 !important;
         border: $container_padding solid transparent !important;
-
-        @if $panel_style == 'default' and $trans == 'false' {
-          box-shadow: inset 0 0 0 1000px $panel_bg;
-        } @else { box-shadow: none; }
       }
 
       .messages-indicator {

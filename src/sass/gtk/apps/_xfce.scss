@@ -108,7 +108,7 @@ window#whiskermenu-window {
     padding: 6px;
     margin: 6px;
     border: none;
-    background-color: if($trans == 'false', $bg_color, rgba($bg_color, 0.95));
+    background-color: rgba($bg_color, 0.95);
     box-shadow: 0 3px 3px 0 $wm_shadow,
                 inset 0 0 0 1px $header_highlight,
                 $wm_outline;

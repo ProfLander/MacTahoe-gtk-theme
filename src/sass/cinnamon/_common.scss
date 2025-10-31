@@ -321,13 +321,7 @@ StScrollBar {
   padding: 0 $container_padding $container_padding / 2;
   color: $fg_color;
 
-  @if $trans == 'true' {
-    border-image: url("assets/menu.svg") 20 20 23 20;
-  }
-
-  @else {
-    border-image: url("assets/menu-solid.svg") 20 20 23 20;
-  }
+  border-image: url("assets/menu.svg") 20 20 23 20;
 
   &-arrow { icon-size: 16px; }
 
@@ -1116,13 +1110,7 @@ StScrollBar {
   border-radius: $bt_radius;
   padding: 20px;
 
-  @if $trans == 'true' {
-    border-image: url("assets/menu.svg") 20 20 23 20;
-  }
-
-  @else {
-    border-image: url("assets/menu-solid.svg") 20 20 23 20;
-  }
+  border-image: url("assets/menu.svg") 20 20 23 20;
 
   > StBoxLayout {
     padding: 4px;
@@ -1990,13 +1978,7 @@ StScrollBar {
     padding: $container_padding + 6px $container_padding + 6px $container_padding + 10px;
     margin: 2px;
 
-    @if $trans == 'true' {
-      border-image: url("assets/menu.svg") 20 20 23 20;
-    }
-  
-    @else {
-      border-image: url("assets/menu-solid.svg") 20 20 23 20;
-    }
+    border-image: url("assets/menu.svg") 20 20 23 20;
 
     .item-box {
       padding: $container_padding;

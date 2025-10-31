@@ -134,18 +134,6 @@ $nautilus_sidebar_image: image($dark_sidebar_bg);
       border-bottom-width: 0;
       border-image: $nautilus_header_borders_image 0 0 1 / 0px 0px 1px stretch;
 
-      @if $nautilus_style == "stable" and $trans == "false" {
-        > box.left.horizontal {
-          background-image: linear-gradient(
-            0deg,
-            $dark_sidebar_bg 0%,
-            $dark_sidebar_bg 95%,
-            transparent 95%,
-            transparent 100%
-          );
-        }
-      }
-
       @if $nautilus_style == "normal" or $nautilus_style == "stable" {
         @if $nautilus_style != "right" {
           > .linked.raised > button:first-child {
@@ -165,7 +153,7 @@ $nautilus_sidebar_image: image($dark_sidebar_bg);
       }
 
       @if $nautilus_style == "stable" {
-        background-image: if($trans == "true", none, $nautilus_sidebar_image);
+        background-image: none;
       } @else {
         &.frame {
           border-right: 1px solid $header_border;
