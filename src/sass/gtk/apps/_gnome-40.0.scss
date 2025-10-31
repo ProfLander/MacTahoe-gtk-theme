@@ -1676,11 +1676,11 @@ dialog-host > widget > widget > toolbarview {
 // Chrome
 //
 
-$chrome_bg_color: if($variant =='light', #f5f5f5, if($darker =='true', #1f1f1f, #242424));
+$chrome_bg_color: if($variant =='light', #f5f5f5, #242424);
 $chrome_fg_color: if($variant =='light', #2e2e2e, #e0e0e0);
 
 @if $scheme =='nord' {
-  $chrome_bg_color: if($variant =='light', #f3f4f6, if($darker =='true', #1d2025, #252932));
+  $chrome_bg_color: if($variant =='light', #f3f4f6, #252932);
   $chrome_fg_color: if($variant =='light', #3b4252, #e5e9f0);
 }
 

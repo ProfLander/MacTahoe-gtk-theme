@@ -1010,12 +1010,6 @@ customize_theme() {
     sed $SED_OPT "/\$shell_version/s/old/new/"                                  "${THEME_SRC_DIR}/sass/_theme-options-temp.scss"
   fi
 
-  # Darker dark colors
-  if [[ "${darker}" == 'true' ]]; then
-    prompt -s "Changing dark color style to darker one ...\n"
-    sed $SED_OPT "/\$darker/s/false/true/"                                      "${THEME_SRC_DIR}/sass/_theme-options-temp.scss"
-  fi
-
   # Change maximized window radius
   if [[ "${max_round}" == 'true' ]]; then
     prompt -s "Changing maximized window style ...\n"
