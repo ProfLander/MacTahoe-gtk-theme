@@ -39,9 +39,7 @@
     }
   }
 
-  @if $blur =='true' {
-    &.csd .sidebar { background-color: transparent; }
-  }
+  &.csd .sidebar { background-color: transparent; }
 
   paned > separator { background-image: image($solid_borders_color); }
 
@@ -97,9 +95,7 @@
     background-color: $header_bg;
     background-clip: border-box;
 
-    @if $blur =='true' {
-      background-color: transparent;
-    }
+    background-color: transparent;
 
     button {
       @extend %flat_button;

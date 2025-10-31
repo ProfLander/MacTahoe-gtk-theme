@@ -5,7 +5,7 @@ $cakeisalie: "This stylesheet is generated, DO NOT EDIT";
 /* #{$cakeisalie} */
 
 $side_style_shadow: linear-gradient(to left, rgba(black, if($variant == 'light', 0.02, 0.06)), transparent 6px);
-$sidebar_bg_color: if($blur =='true', transparent, $dark_sidebar_bg);
+$sidebar_bg_color: transparent;
 
 %side_style_left {
   background-image: $side_style_shadow;

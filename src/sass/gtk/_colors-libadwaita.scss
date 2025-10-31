@@ -318,5 +318,5 @@ $dark_5: #000000;
   $dark_sidebar_bg: color-mix(in srgb, gtkcolor(sidebar_bg_color) 96%, transparent);
   $menu_bg: color-mix(in srgb, gtkcolor(popover_bg_color) 96%, transparent);
   $dialog_bg_color: color-mix(in srgb, gtkcolor(dialog_bg_color) 96%, transparent);
-  $window_bg: color-mix(in srgb, gtkcolor(window_bg_color) if($blur == 'true', 75%, 96%), transparent);
+  $window_bg: color-mix(in srgb, gtkcolor(window_bg_color) 75%, transparent);
 }
