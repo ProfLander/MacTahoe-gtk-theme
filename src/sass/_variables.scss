@@ -26,6 +26,18 @@ $subheading-size: if($laptop == 'false', 17px, 15px);
 $base_font_size: if($font_size == 'normal', 11pt, 10pt);
 
 // opacities
+
+//$higher_opacity: 0.9;
+//$middle_opacity: 0.6;
+//$lower_opacity: 0.3;
+
+//$secondary_opacity: 0.75;
+//$hint_opacity: 0.6;
+//$disabled_opacity: 0.45;
+//$trans_opacity: 0.96;
+//$blur_opacity: 0.65;
+//$side_blur_opacity: 0.75;
+
 $higher_opacity: 0.1;
 $middle_opacity: 0.1;
 $lower_opacity: 0.1;
