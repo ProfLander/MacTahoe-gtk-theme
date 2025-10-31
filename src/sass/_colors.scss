@@ -29,12 +29,15 @@ $base_color:                  if($variant == 'light',
 
 $text_color:                  if($variant == 'light', #363636, #dadada);
 
-$bg_color:                    if($variant == 'light', #f5f5f5, #333333);
+$bg_color:                    transparentize(if($variant == 'light',
+                                                #f5f5f5,
+                                                #333333),
+                                             1.0 - $secondary_opacity);
 
-$backdrop_color:              gtkalpha(if($variant == 'light',
-                                          #f2f2f2,
-                                          #242424),
-                                       $secondary_opacity);
+$backdrop_color:              transparentize(if($variant == 'light',
+                                                #f2f2f2,
+                                                #242424),
+                                             1.0 - $secondary_opacity);
 
 $fg_color:                    if($variant == 'light', #242424, #dedede);
 $alt_fg_color:                if($variant == 'light', #424242, #afafaf);
@@ -229,7 +232,10 @@ $drop_target_color:           if($scheme == 'nord',
                                  $theme_color_orange);
 
 // Headerbar colors
-$header_bg:                   if($variant == 'light', #ffffff, #333333);
+$header_bg:                   transparentize(if($variant == 'light',
+                                                #ffffff,
+                                                #333333),
+                                             1.0 - $secondary_opacity);
 // For metacity
 $header_highlight:            if($variant == 'dark', #404040, #f5f5f5);
 
