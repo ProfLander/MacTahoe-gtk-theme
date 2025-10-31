@@ -23,9 +23,10 @@
 @import 'colors-palette';
 
 // Base colors
-$base_color:                  if($variant == 'light',
-                                 #ffffff,
-                                 #242424);
+$base_color:                  transparentize(if($variant == 'light',
+                                                #ffffff,
+                                                #242424),
+                                             1.0 - $secondary_opacity);
 
 $text_color:                  if($variant == 'light', #363636, #dadada);
 
