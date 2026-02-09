@@ -27,27 +27,18 @@ $base_font_size: if($font_size == 'normal', 11pt, 10pt);
 
 // opacities
 
-//$higher_opacity: 0.9;
-//$middle_opacity: 0.6;
-//$lower_opacity: 0.3;
+$opacity_scale: 0.8;
 
-//$secondary_opacity: 0.75;
-//$hint_opacity: 0.6;
-//$disabled_opacity: 0.45;
-//$trans_opacity: 0.96;
-//$blur_opacity: 0.65;
-//$side_blur_opacity: 0.75;
+$higher_opacity: $opacity_scale * 0.9;
+$middle_opacity: $opacity_scale * 0.6;
+$lower_opacity: $opacity_scale * 0.3;
 
-$higher_opacity: 0.1;
-$middle_opacity: 0.1;
-$lower_opacity: 0.1;
-
-$secondary_opacity: 0.1;
-$hint_opacity: 0.1;
-$disabled_opacity: 0.1;
-$trans_opacity: 0.1;
-$blur_opacity: 0.1;
-$side_blur_opacity: 0.1;
+$secondary_opacity: $opacity_scale * 0.75;
+$hint_opacity: $opacity_scale * 0.6;
+$disabled_opacity: $opacity_scale * 0.45;
+$trans_opacity: $opacity_scale * 0.96;
+$blur_opacity: $opacity_scale * 0.65;
+$side_blur_opacity: $opacity_scale * 0.75;
 
 // sizes
 $small_size: if($laptop == 'false', 24px, 20px);
